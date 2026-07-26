@@ -14,13 +14,15 @@ const projects = [
     kicker: 'Advanced Financial Systems Ecosystem',
     description: 'A desktop platform bringing option pricing, financial scoring, reporting, security, and certification learning into one considered system.',
     tags: ['Python / Tkinter', 'Oracle 21c XE', 'Black-Scholes', 'ReportLab'],
+    details: [],
   },
   {
     number: '02',
-    title: 'FinLearn AI',
+    title: 'FinanceX',
     kicker: 'Gamified Multilingual Stock Market Education',
     description: 'A bilingual Tamil/English learning platform that turns market concepts into animated lessons, adaptive quizzes, and streak-based practice.',
     tags: ['MERN stack', 'Google Gemini API', 'Tamil + English'],
+    details: [],
   },
   {
     number: '03',
@@ -28,6 +30,7 @@ const projects = [
     kicker: 'Academic Management Framework',
     description: 'A Java-based attendance system with a Swing GUI and relational database backend, designed around the practical rhythms of academic administration.',
     tags: ['Java 11', 'Swing GUI', 'Relational DB'],
+    details: [],
   },
   {
     number: '04',
@@ -35,6 +38,34 @@ const projects = [
     kicker: 'Structural Design & Fabrication Deliverables',
     description: 'Full structural CAD, DXF, and BOM deliverables for a 120×100 ft industrial shed with Pratt trusses, created for a family fabrication business.',
     tags: ['CAD / DXF', 'BOM', 'Pratt trusses'],
+    details: [],
+  },
+  {
+    number: '05',
+    title: 'NumisAI',
+    kicker: 'AI-Powered Collectible Identification & Social Collection Platform',
+    status: 'In process',
+    description: 'A full-stack platform for identifying coins, stamps, and antiques through AI-powered image recognition, returning country, year, denomination, material, rarity score, and estimated market value in real time.',
+    tags: ['React', 'TanStack Start', 'FastAPI', 'Lovable Cloud', 'PostgreSQL', 'Computer Vision', 'LLM Integration'],
+    details: [
+      'Architected an Instagram-style social collection layer with public profiles, followers, item feeds, role-based access control, and row-level security across 15+ relational tables.',
+      'Built a per-user AI assistant scoped to individual collection data with server-side LLM integration and strict data-isolation guarantees between users.',
+      'Implemented automated Excel valuation reports with Python/openpyxl, formula-driven category and portfolio-total calculations, badges, leaderboards, and a secure peer-to-peer trade flow with reputation scoring.',
+      'Addressed privacy risks around net-worth visibility and PII exposure through server-side data bucketing and scoped access policies.',
+    ],
+  },
+  {
+    number: '06',
+    title: 'AI-Powered Personal Wealth Advisor',
+    kicker: 'LLM-Driven Portfolio Management & Research Analyst Platform',
+    status: 'Planned extension',
+    description: 'An LLM-driven portfolio management and research analyst platform that aggregates net worth across asset classes, tracks financial goals with compounding-based projections, and grounds portfolio conversations in a user’s real data.',
+    tags: ['MERN stack', 'Google Gemini', 'Claude API', 'Portfolio Analytics'],
+    details: [
+      'The planned final-year extension of the Semester 5 FinanceX project, reusing its authentication system and database patterns to build a fuller research-analyst-style platform.',
+      'Includes an AI chat assistant for portfolio and company-analysis questions, plus a ticker-search module combining LLM-based news sentiment scoring with basic fundamentals.',
+      'Designed to bring financial goals, long-term projections, and multi-asset net-worth tracking into one research-oriented workspace.',
+    ],
   },
 ];
 
@@ -189,8 +220,10 @@ function Projects() {
           {projects.map((project, index) => <Reveal key={project.title} delay={index * 0.07} className="contents">
             <article className="project-card" data-testid={`card-project-${project.number}`}>
               <div className="project-kicker">{project.number} / {project.kicker}</div>
+              {project.status && <div className="project-status">{project.status}</div>}
               <h3>{project.title}</h3>
               <p className="project-description">{project.description}</p>
+              {project.details.length > 0 && <div className="project-details">{project.details.map((detail) => <p key={detail}>{detail}</p>)}</div>}
               <div className="project-footer"><div className="tags">{project.tags.map((tag) => <span className="tag" key={tag}>{tag}</span>)}</div><a className="project-link" href="#contact" aria-label={`Ask about ${project.title}`} data-testid={`link-project-${project.number}`}>Repository <ExternalLink size={12} /></a></div>
             </article>
           </Reveal>)}
