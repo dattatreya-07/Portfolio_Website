@@ -1,0 +1,68 @@
+Build a personal portfolio website for Dattatreya M K, a Computer Science Engineering undergraduate targeting fintech engineering, quantitative analysis, and research analyst roles.
+
+TECH STACK:
+- React (functional components, hooks)
+- Plain CSS or Tailwind (either is fine)
+- Framer Motion for subtle scroll/entrance animations
+- Recharts or Chart.js if a data-visualization section is included
+- Fully responsive (mobile, tablet, desktop)
+
+DESIGN DIRECTION:
+- Professional, fintech-appropriate aesthetic: deep teal/navy and gold accent color scheme (avoid generic bright blue "template" look)
+- Clean typography, generous whitespace, no clutter
+- Dark mode as default, with the option for a light mode toggle
+- Subtle, purposeful animations only — nothing distracting
+
+SECTIONS (in this order):
+
+1. HERO
+- Name: Dattatreya M K
+- Tagline: "Aspiring Fintech Analyst | Full Stack Developer | Quantitative Finance"
+- Short one-line intro: "CSE undergraduate building at the intersection of software engineering and financial markets."
+- CTA buttons: "View Projects", "Download Resume", "Contact Me"
+
+2. ABOUT
+- Short bio: B.E. Computer Science Engineering at Mepco Schlenk Engineering College, Sivakasi (2024–2028), CGPA 8.45. Pursuing NISM Series XV (Research Analyst) certification. Combines technical development skills with hands-on investing experience across Indian (NSE/BSE) and US (NYSE/NASDAQ) equities since December 2025.
+- Mention: GenAI internship at SK Tech Forge (prompt engineering, automated text/image projects)
+
+3. SKILLS
+- Group into two categories: "Technical" (Python, C/C++, JavaScript, HTML/CSS, SQL, React, Node.js, MongoDB, Data Analysis, Generative AI) and "Financial" (Quantitative Research, Equity Research, Portfolio Management, Market Research)
+- Display as clean tags/pills or a simple icon grid — no cheesy animated progress bars
+
+4. PROJECTS (card-based grid, each expandable or linking to a detail view)
+- FinVault Pro — Advanced Financial Systems Ecosystem: Python/Tkinter + Oracle 21c XE platform with Black-Scholes option pricing, financial scoring engine, ReportLab PDF reporting, SHA-256 security, certification quiz module
+- FinLearn AI — Gamified Multilingual Stock Market Education Platform: MERN stack + Google Gemini API, bilingual Tamil/English animated lessons, streak-based gamification, adaptive quizzes
+- MEPCO Attendance ERP — Academic Management Framework: Java 11 + Swing GUI attendance system with relational database backend
+- Steel Shed CAD Project: Generated full structural CAD/DXF/BOM deliverables for a 120x100 ft industrial shed with Pratt trusses, for a family fabrication business
+- Each project card: title, one-line description, tech stack tags, and a GitHub link placeholder
+
+5. CERTIFICATIONS
+- NISM Series XV: Research Analyst Certification (in progress)
+- NPTEL Blockchain and its Applications (IIT Kharagpur, Elite)
+- NPTEL Programming in Modern C++ (Grade B+)
+- IEEE English for Technical Professionals
+- Hindi Praveshika (Central Hindi Directorate)
+- Tamil Nadu Typewriting, Sub-Junior Level, First Class
+
+6. ACHIEVEMENTS
+- Mepco Management Scholarship Award — merit scholarship of ₹10,000, awarded in consecutive academic years for maintaining top-tier academic standing
+
+7. INVESTMENT PHILOSOPHY (optional differentiator section)
+- Short section framing genuine investing experience: "Practicing what I study — an active long-term investor across Indian and US equities since December 2025, following a disciplined buy-and-hold approach with a 20+ year horizon."
+- Optional: a simple static chart/graphic illustrating a compounding growth example (not real personal financial data)
+
+8. CONTACT
+- Email: mkdattatreya07@gmail.com
+- Links: GitHub (github.com/dattatreya-07), LinkedIn (linkedin.com/in/dattatreya-mk), LeetCode (leetcode.com/u/Dattatreya_MK)
+- Simple contact form (name, email, message) — can just mailto: link if a backend isn't set up
+
+FOOTER:
+- Copyright line, quick links back to top of each section
+
+BUILD PRIORITY:
+1. Hero + About + Contact (get the skeleton and navigation working first)
+2. Skills + Projects (the core content sections)
+3. Certifications + Achievements
+4. Investment Philosophy section + any animations/polish last
+
+Keep the codebase clean and componentized (one component per section) so it's easy to update content later as new projects and certifications are added.
