@@ -1,7 +1,7 @@
 # Dattatreya M K — Portfolio
 
 Personal portfolio website for Dattatreya M K — CSE undergraduate building at the intersection of software engineering, fintech, and quantitative finance.
-LIVE: https://portfolio-website-not-seven.vercel.app/
+LIVE: [https://portfolio-website-not-seven.vercel.app/](https://portfolio-website-sigma-eight-15.vercel.app/)
 
 ## Built With
 
